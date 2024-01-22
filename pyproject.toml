@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "poetry-python-api"
+version = "0.1.0"
+description = ""
+authors = ["Edgar Kalinovski <kalined>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = {extras = ["all"], version = "^0.103.1"}
+sqlalchemy = "^2.0.20"
+python-dotenv = "^1.0.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.1"
+pre-commit = "^3.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
