@@ -1,7 +1,6 @@
 import decimal
 from datetime import date
 
-from database import SessionLocal
 from sqlalchemy import ForeignKey, select
 from sqlalchemy.orm import (
     DeclarativeBase,
@@ -10,6 +9,8 @@ from sqlalchemy.orm import (
     mapped_column,
     relationship,
 )
+
+from poetry_python_api.database import SessionLocal
 
 Base: DeclarativeBase = declarative_base()
 
